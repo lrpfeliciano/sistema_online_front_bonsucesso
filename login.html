@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/estilo.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="cursos.html">
+            <div class="row">
+                <label for="login" 
+                    class="form-label">Login</label>
+                <input type="text" id="login"
+                    name="login"
+                    class="form-control" required />
+                
+            </div>
+            <div class="row">
+                <label for="senha" class="form-label">
+                    Senha
+                </label>
+                <input type="password" id="senha"
+                    name="senha" class="form-control"
+                    required minlength="6" 
+                    maxlength="10" />
+            </div>
+
+            <div class="row afastado">
+                <div class="col-md-12">
+                    <input type="submit" value="Entrar"
+                        class="btn btn-primary" />
+                    <input type="reset" value="Limpar" 
+                        class="btn btn-secondary" />
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

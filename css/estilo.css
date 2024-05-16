@@ -1,0 +1,14 @@
+.btn-primary{
+    background-color: #FF0000 !important;
+    border-color: #FF0000 !important;
+}
+
+.afastado {
+    margin-top: 20px;
+}
+
+.btn-secondary {
+    background-color: #ffe100 !important;
+    border-color: #ffe100 !important;
+    color: #000;
+}
