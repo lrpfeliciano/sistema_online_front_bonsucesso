@@ -53,8 +53,47 @@
         <h2>Sistema de Controle Acadêmico Online</h2>
 
         <p>Bem vindo ao nosso sistema.</p>
+
+        <a href="#" onclick="abrirTela()">Excluir</a>
+        <input type="button" value="Excluir" 
+            onclick="abrirTela()" />
     </div>
     
-
+    <div class="modal" id="mensagem">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Sistema Acadêmico</h5>
+                    <button type="button" 
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Fechar"
+                            onclick="fechar()"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bem vindo ao sistema.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button"
+                        class="btn btn-primary"
+                        onclick="fechar()">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+    abrirTela();
+
+    function abrirTela(){
+        let tela = document.getElementById("mensagem");
+        tela.style.display = "block";
+    }
+
+    function fechar(){
+        let tela = document.getElementById("mensagem");
+        tela.style.display = "none";
+    }
+</script>
+<script src="js/bootstrap.js"></script>
 </html>
